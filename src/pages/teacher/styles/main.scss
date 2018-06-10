@@ -1,0 +1,163 @@
+.teacher-profile {
+  $blok: &;
+  
+  display: flex;
+  justify-content: center;
+  padding: 40px 0;
+
+  .container {
+    padding: 0 25px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__preview {
+    display: flex;
+    //align-items: center;
+    
+    &-photo {
+      display: block;
+      
+      img {
+        width: auto;
+        height: 420px;
+      }
+    }
+
+    &-information {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-left: 35px;
+    }
+
+    &-section {
+      display: flex;
+      flex-direction: column;
+      width: 505px;
+      padding: 29px 0;
+      font-size: 18px;
+
+      &:first-child {
+        padding-top: 0;
+      }
+
+      &:last-child {
+        padding-bottom: 0;
+      }
+      
+      &:not(:last-child) {
+        border-bottom: 2px solid #e6e6e6;
+      }
+
+      p, a {
+        padding: 0;
+        margin: 0 0 21px 0 ;
+        line-height: 1;
+
+        &:last-child {
+          margin: 0;
+        }
+      }
+
+      a {
+        text-decoration: underline;
+      }
+
+      #{$blok}__full-name {
+        margin: 0 0 35px 0;
+      }
+    }
+  }
+
+  &__full-name {
+    font-family: NotoSerif;
+    font-size: 28px;
+    font-weight: 500;
+  }
+
+  &__article {
+    padding-top: 30px;
+
+    &:after {
+      content: "";
+      display: block;
+      width: 38px;
+      margin-top: 30px;
+      border-bottom: 2px solid #e6e6e6;
+    }
+
+    &:last-child:after {
+      content: none;
+    }
+    
+    h3, p {
+      padding: 0;
+      margin: 0;
+      font-size: 18px;
+      font-family: NotoSansBold;
+    }
+
+    h3 {
+      margin: 0 0 14px 0;
+    }
+
+    a {
+      text-decoration: underline;
+    }
+
+    &--interests {
+        p {
+          font-family: NotoSans;
+        }
+    }
+
+    &-row {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      
+      img {
+        height: 26px;
+        margin-right: 12px;
+      }
+    }
+
+    &-publications {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &-publication {
+      p {
+        font-family: NotoSans;
+      }
+
+      td {
+        vertical-align: top;
+      }
+
+      td:first-child {
+        padding: 5px 30px 0 0;
+        font-size: 11px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 845px) {
+      &__preview {
+        height: auto;
+        &-photo {
+          width: 30%;
+          
+          img {
+            height: auto;
+            width: 100%;
+          }
+        }
+        &-section {
+          width: 100%;
+        }
+      }
+  }
+}

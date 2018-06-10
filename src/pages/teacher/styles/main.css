@@ -1,0 +1,96 @@
+.teacher-profile {
+  display: flex;
+  justify-content: center;
+  padding: 40px 0; }
+  .teacher-profile .container {
+    padding: 0 25px;
+    display: flex;
+    flex-direction: column; }
+  .teacher-profile__preview {
+    display: flex; }
+    .teacher-profile__preview-photo {
+      display: block; }
+      .teacher-profile__preview-photo img {
+        width: auto;
+        height: 420px; }
+    .teacher-profile__preview-information {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-left: 35px; }
+    .teacher-profile__preview-section {
+      display: flex;
+      flex-direction: column;
+      width: 505px;
+      padding: 29px 0;
+      font-size: 18px; }
+      .teacher-profile__preview-section:first-child {
+        padding-top: 0; }
+      .teacher-profile__preview-section:last-child {
+        padding-bottom: 0; }
+      .teacher-profile__preview-section:not(:last-child) {
+        border-bottom: 2px solid #e6e6e6; }
+      .teacher-profile__preview-section p, .teacher-profile__preview-section a {
+        padding: 0;
+        margin: 0 0 21px 0;
+        line-height: 1; }
+        .teacher-profile__preview-section p:last-child, .teacher-profile__preview-section a:last-child {
+          margin: 0; }
+      .teacher-profile__preview-section a {
+        text-decoration: underline; }
+      .teacher-profile__preview-section .teacher-profile__full-name {
+        margin: 0 0 35px 0; }
+  .teacher-profile__full-name {
+    font-family: NotoSerif;
+    font-size: 28px;
+    font-weight: 500; }
+  .teacher-profile__article {
+    padding-top: 30px; }
+    .teacher-profile__article:after {
+      content: "";
+      display: block;
+      width: 38px;
+      margin-top: 30px;
+      border-bottom: 2px solid #e6e6e6; }
+    .teacher-profile__article:last-child:after {
+      content: none; }
+    .teacher-profile__article h3, .teacher-profile__article p {
+      padding: 0;
+      margin: 0;
+      font-size: 18px;
+      font-family: NotoSansBold; }
+    .teacher-profile__article h3 {
+      margin: 0 0 14px 0; }
+    .teacher-profile__article a {
+      text-decoration: underline; }
+    .teacher-profile__article--interests p {
+      font-family: NotoSans; }
+    .teacher-profile__article-row {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px; }
+      .teacher-profile__article-row img {
+        height: 26px;
+        margin-right: 12px; }
+    .teacher-profile__article-publications {
+      display: flex;
+      flex-direction: column; }
+    .teacher-profile__article-publication p {
+      font-family: NotoSans; }
+    .teacher-profile__article-publication td {
+      vertical-align: top; }
+    .teacher-profile__article-publication td:first-child {
+      padding: 5px 30px 0 0;
+      font-size: 11px; }
+  @media only screen and (max-width: 845px) {
+    .teacher-profile__preview {
+      height: auto; }
+      .teacher-profile__preview-photo {
+        width: 30%; }
+        .teacher-profile__preview-photo img {
+          height: auto;
+          width: 100%; }
+      .teacher-profile__preview-section {
+        width: 100%; } }
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,58 @@
+.not-found {
+  position: relative; }
+  .not-found h1, .not-found h2, .not-found h3 {
+    margin: 0;
+    padding: 0;
+    font-weight: 300; }
+  .not-found .notification {
+    position: absolute;
+    top: 0; }
+  .not-found .container {
+    padding: 0 25px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto; }
+  .not-found h1 {
+    font-size: 92px;
+    font-family: NotoSerif; }
+  .not-found h2 {
+    font-size: 28px;
+    font-family: NotoSerif; }
+  .not-found h3 {
+    font-size: 22px;
+    margin-bottom: 20px; }
+  .not-found__content {
+    padding: 122px 0; }
+  .not-found__suggestions {
+    margin: 56px 0; }
+  .not-found__suggestion {
+    margin-bottom: 10px; }
+    .not-found__suggestion a {
+      text-decoration: underline;
+      font-size: 18px; }
+  .not-found__search {
+    width: 100%;
+    border: 1px solid black;
+    padding: 20px; }
+    .not-found__search::placeholder {
+      color: black;
+      font-family: NotoSans;
+      font-size: 18px;
+      opacity: 1; }
+    .not-found__search-container {
+      display: flex;
+      width: 600px;
+      height: 48px;
+      position: relative; }
+    .not-found__search-icon {
+      height: 100%;
+      width: 40px;
+      position: absolute;
+      right: 0;
+      border: none;
+      background: transparent url("../../../images/search.png") no-repeat center left; }
+  @media only screen and (max-width: 630px) {
+    .not-found__search-container {
+      width: 100%; } }
+
+/*# sourceMappingURL=main.css.map */
